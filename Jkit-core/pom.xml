@@ -9,17 +9,13 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>me.wengy.jkit</groupId>
-    <artifactId>jkit-parent</artifactId>
+    <artifactId>jkit-core</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <name>jkit-parent</name>
-    <description>Parent pom providing dependency and plugin management for applications built with Maven</description>
+    <name>jkit-core</name>
+    <description>Basic component for JKit</description>
 
     <properties>
         <java.version>1.8</java.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -34,10 +30,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <modules>
-        <module>jkit-core</module>
-    </modules>
 
     <build>
         <plugins>
