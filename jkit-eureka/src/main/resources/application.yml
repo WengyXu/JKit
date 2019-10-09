@@ -1,0 +1,17 @@
+# \u670D\u52A1\u540D\u79F0
+spring:
+  application:
+    name: jkit-eureka
+# \u670D\u52A1\u7AEF\u53E3\u53F7
+server:
+  port: 8761
+
+#Eureka \u76F8\u5173\u914D\u7F6E
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka/
+    # \u662F\u5426\u4ECE\u5176\u4ED6\u7684\u670D\u52A1\u4E2D\u5FC3\u540C\u6B65\u670D\u52A1\u5217\u8868
+    fetch-registry: false
+    # \u662F\u5426\u628A\u81EA\u5DF1\u4F5C\u4E3A\u670D\u52A1\u6CE8\u518C\u5230\u5176\u4ED6\u670D\u52A1\u6CE8\u518C\u4E2D\u5FC3
+    register-with-eureka: false
